@@ -38,7 +38,7 @@ export interface ChartContainerState {}
 export const TVChartContainer = () => {
   let datafeed = useTvDataFeed();
   const defaultProps: ChartContainerProps = {
-    symbol: 'WOOF/USDC',
+    symbol: 'SOL/USDC',
     // @ts-ignore
     interval: '60',
     auto_save_delay: 5,

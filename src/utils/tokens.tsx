@@ -744,6 +744,12 @@ export const TOKENS: Tokens = {
     mintAddress: '9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE',
     decimals: 6,
   },
+  SOL: {
+    symbol: 'SOL',
+    name: 'SOL',
+    mintAddress: 'So11111111111111111111111111111111111111112',
+    decimals: 9,
+  },
   ORCA: {
     symbol: 'ORCA',
     name: 'ORCA',

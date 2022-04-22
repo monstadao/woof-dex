@@ -34,11 +34,11 @@ const LogoWrapper = styled.div`
 const MENU = [
    {
     'title': 'TRADE',
-    'link': 'https://dex.woofsolana.io',
+    'link': 'https://dex.monstadao.com',
   },
   {
     'title': 'SWAP',
-    'link': 'https://swap.woofsolana.io',
+    'link': 'https://swap.monstadao.com',
   },
 /*   {
     'title': 'DASHBOARD',

@@ -49,6 +49,12 @@ const _IGNORE_DEPRECATED = false;
 
 const _MARKETS = [
   {
+    name: 'SOL/USDC',
+    deprecated: true,
+    address: new PublicKey('9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT'),
+    programId: new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'),
+  },
+  {
     name: 'RAY/WUSDT',
     deprecated: true,
     address: new PublicKey('C4z32zw9WKaGPhNuU54ohzrV4CE1Uau3cFx6T8RLjxYC'),
@@ -877,7 +883,7 @@ const _SLOW_REFRESH_INTERVAL_NEW = 60 * 1000;
 const _FAST_REFRESH_INTERVAL = 1000;
 
 export const DEFAULT_MARKET = USE_MARKETS.find(
-  ({ name, deprecated }) => name === 'WOOF/USDC' && !deprecated,
+  ({ name, deprecated }) => name === 'SOL/USDC' && !deprecated,
 );
 
 export function getMarketDetails(
@@ -951,7 +957,7 @@ export function MarketProvider({ marketAddress, setMarketAddress, children }) {
 
   const [market, setMarket] = useState<Market | null>();
 
-  const [marketName, setMarketName] = useState('WOOF/USDC');
+  const [marketName, setMarketName] = useState('SOL/USDC');
 
   // Replace existing market with a non-deprecated one on first load
   useEffect(() => {
