@@ -50,7 +50,7 @@ const _IGNORE_DEPRECATED = false;
 const _MARKETS = [
   {
     name: 'SOL/USDC',
-    deprecated: true,
+    deprecated: false,
     address: new PublicKey('9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT'),
     programId: new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'),
   },
